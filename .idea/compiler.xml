@@ -7,12 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
+        <module name="spring-feign-ljw" />
+        <module name="spring-provider-ljw" />
         <module name="springcloud_eureka" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-feign-ljw" options="-parameters" />
+      <module name="spring-provider-ljw" options="-parameters" />
       <module name="springcloud_eureka" options="-parameters" />
     </option>
   </component>
